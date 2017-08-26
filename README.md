@@ -14,3 +14,12 @@ UI5 demo app Manage Products modified to consume the UI5 Firebase Model
  7. Initialize a FirebaseModel in the `Component.js`
  8. Add this dependency to Component.js `"openui5/community/model/firebase/FirebaseModel"`
  9. Add this in the html boostrap code: `"openui5.community.model.firebase": "../thirdparty/openui5/community/model/firebase/"`
+
+### Step 3 - Loading some Products into Firebase
+ 1. Copy `localService\mockdata\Products.json` to `test\data\` (create the data folder)
+ 2. Wrap that in a Products object
+ 3. Load `Products.json` into Firebase
+ 4. Login into firebase (in the app)
+ 5. Fix the bindings in the `view\Worklist.view.xml` 
+ 
+

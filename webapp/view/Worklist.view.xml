@@ -52,7 +52,7 @@
 							width="auto"
 							mode="MultiSelect"
 							items="{
-								path: '/Products',
+								path: 'firebase>/Products',
 								sorter: {
 									path: 'ProductName',
 									descending: false
@@ -110,22 +110,22 @@
 									type="Navigation">
 								<cells>
 									<ObjectIdentifier
-											title="{ProductName}"/>
-									<Text text = "{Supplier/CompanyName}"/>
+											title="{firebase>ProductName}"/>
+									<Text text = "{firebase>Supplier/CompanyName}"/>
 									<ObjectNumber
 											unit="EUR"
 											number="{
-									path: 'UnitPrice',
+									path: 'firebase>UnitPrice',
 									formatter: '.formatter.numberUnit'
 								}"/>
 									<ObjectNumber
-											number="{UnitsOnOrder}"
+											number="{firebase>UnitsOnOrder}"
 											unit="PC"/>
 									<ObjectNumber
-											number="{UnitsInStock}"
+											number="{firebase>UnitsInStock}"
 											unit="PC"
 											state="{
-									path: 'UnitsInStock',
+									path: 'firebase>UnitsInStock',
 									formatter: '.formatter.quantityState'
 								}"/>
 								</cells>
