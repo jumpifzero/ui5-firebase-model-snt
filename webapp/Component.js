@@ -31,6 +31,9 @@ sap.ui.define([
 			// set the product feedback model
 			this.setModel(models.createCommentsModel(), "productFeedback");
 
+      // set the firebase model
+			this.setModel(models.createFirebaseModel(), "firebase");
+
 			// create the views based on the url/hash
 			this.getRouter().initialize();
 		},
